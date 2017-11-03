@@ -2719,16 +2719,35 @@ img.PartnerLogo {
 	text-align: center;
 	letter-spacing: 2.5px;
 }
+
 .mygrid{
 	/*display:grid;*/
     grid-template-columns: 25% 25% 25% 25%;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+
     grid-gap:0.25em;
     grid-auto-rows: 1fr;
-	display: -ms-grid;
-	
+
+	display: grid;
+	margin: 2em 2em 2em 2em;
+}
+
+.mygrid2{
+	/*display:grid;*/
+    grid-template-columns: 35% 65%;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+
+    grid-gap:0.25em;
+    grid-auto-rows: 1fr;
+    overflow: auto;
 	display: grid;
 	padding: 2em;
 }
+
 .mygrid > div{
 	padding: 1em;
 	height: 100%;
@@ -2921,3 +2940,32 @@ img.PartnerLogo {
 			.image.main img {
 				width: 100%;
 			}
+
+.img-container{
+	width: 30%;
+ 	/*height: 50%;*/
+ 	margin-left: 2em;
+}
+
+.img-circle {
+	
+	/*margin-top: 3em;*/
+	width: 300px;
+ 	height: 300px;
+	margin-bottom: 0;
+    border-radius: 100%;
+
+ 	background-image: url('images/carlosperez.jpeg');
+ 	background-size: 100% 100%;
+ 	display: block;
+ 	-webkit-border-radius: 50%;
+ 	-moz-border-radius: 50%;
+}
+
+
+
+.author-buttons{
+	display: table;
+  	margin: 0 auto;
+	display: inline-block;
+}
